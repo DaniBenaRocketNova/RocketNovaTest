@@ -1,4 +1,6 @@
 # RocketNovaTest
 Pruebas RocketNova
-Si accede carpeta ejercicios tenemos ejercicios resueltos
-Si accede a proyecto usuario se tiene el readme y la solucion del mini-proyecto
+## Contenido del repositorio
+
+- **`ejercicios/`**: contiene los ejercicios resueltos.
+- **`proyecto usuarios/`**: contiene el README y la solución del mini proyecto del sistema de usuarios (lógica en JavaScript y API con Node.js + Express).
