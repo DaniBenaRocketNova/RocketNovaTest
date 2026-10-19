@@ -1,2 +1,0 @@
-# RocketNovaTest
-Pruebas RocketNova
