@@ -1,0 +1,44 @@
+<form action="/api/contacto" method="post">
+  <p>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Ej.: Laura Gómez" required>
+  </p>
+
+  <p>
+    <label for="correo">Correo electrónico</label>
+    <input type="email" id="correo" name="correo" autocomplete="email" placeholder="nombre@tunegocio.es" required>
+  </p>
+
+  <p>
+    <label for="telefono">Teléfono (opcional)</label>
+    <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="600 123 456">
+  </p>
+
+  <fieldset>
+    <legend>¿Qué quieres revisar?</legend>
+    <p>
+      <input type="checkbox" id="revisar-suministros" name="revisar" value="suministros">
+      <label for="revisar-suministros">Suministros</label>
+    </p>
+    <p>
+      <input type="checkbox" id="revisar-seguros" name="revisar" value="seguros">
+      <label for="revisar-seguros">Seguros</label>
+    </p>
+    <p>
+      <input type="checkbox" id="revisar-telefonia" name="revisar" value="telefonia">
+      <label for="revisar-telefonia">Telefonía</label>
+    </p>
+  </fieldset>
+
+  <p>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos brevemente tu caso: tipo de negocio, qué te preocupa, etc."></textarea>
+  </p>
+
+  <p>
+    <input type="checkbox" id="privacidad" name="privacidad" value="aceptada" required>
+    <label for="privacidad">He leído y acepto la <a href="/privacidad">política de privacidad</a></label>
+  </p>
+
+  <button type="submit">Enviar</button>
+</form>

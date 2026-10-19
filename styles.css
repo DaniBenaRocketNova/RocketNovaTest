@@ -1,0 +1,39 @@
+:root {
+  --color-principal: #0f766e;
+  --color-fondo: #ffffff;
+  --color-texto: #1f2937;
+  --color-borde: #d1d5db;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  font-family: system-ui, sans-serif;
+}
+
+/* Móvil primero: una columna por defecto */
+.planes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.plan {
+  padding: 24px;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  background: var(--color-fondo);
+}
+
+.plan--destacado {
+  border-color: var(--color-principal);
+}
+
+/* Desde 900px: tres columnas */
+@media (min-width: 900px) {
+  .planes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
